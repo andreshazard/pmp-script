@@ -1,0 +1,5 @@
+# VIM files
+*.swp
+
+# credentials file
+credentials.txt
