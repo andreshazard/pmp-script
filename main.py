@@ -19,7 +19,7 @@ m.select("INBOX")  # here you a can choose a mail box like INBOX instead
 resp, items = m.search(None, "SUBJECT", "Second factor password for Password Manager Pro")
 items = items[0].split()
 if items == []:
-    print "Secondary email password has been find, try again later"
+    print "Secondary email password has not been find, try again later"
 
 for emailid in items:
     resp, data = m.fetch(emailid, "(RFC822)")  # fetching the mail, "`(RFC822)`" means "get the whole stuff", but you can ask for headers only, etc
