@@ -32,8 +32,8 @@ for emailid in items:
     for line in email_body.splitlines():
         if "Password Manager Pro is:" in line:
             pmp_secondary_pwd = re.sub('[^0-9]', '', line)  # Get only the numbers of that line
-            print pmp_pwd
-            print pmp_secondary_pwd
+            print "Password = " + pmp_pwd
+            print "Secondary Password = " + pmp_secondary_pwd
             break
     break
 m.logout()
