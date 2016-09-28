@@ -15,7 +15,7 @@ except:
 # connecting to the gmail imap server
 m = imaplib.IMAP4_SSL("imap.gmail.com")
 m.login(user, pwd)
-m.select("INBOX")  # here you a can choose a mail box like INBOX instead
+m.select("INBOX")  # mail box where you get the pmp email
 resp, items = m.search(None, "SUBJECT", "Second factor password for Password Manager Pro")
 items = items[0].split()
 if items == []:
