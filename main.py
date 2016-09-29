@@ -1,3 +1,4 @@
+# reference https://gist.github.com/jasonrdsouza/1674794
 import email
 import getpass
 import imaplib
